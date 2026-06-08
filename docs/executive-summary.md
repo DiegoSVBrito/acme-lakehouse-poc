@@ -1,8 +1,8 @@
 # Executive Summary
 ## ACME Inc. — Sales & Margin Analytics POC
 
-Author: Diego Santiago Vieira de Brito
-Reference Date: April 1, 2021
+Author: Diego Brito · Pomerol
+Reference Date: April 1, 2021 (data cutoff)  |  Document: June 2026
 
 ---
 
@@ -67,4 +67,4 @@ All eight deliverables specified in the project scope are complete. The Gold lay
 
 ---
 
-Diego Santiago Vieira de Brito
+Diego Brito · Pomerol · June 2026
