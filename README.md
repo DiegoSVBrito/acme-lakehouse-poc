@@ -119,14 +119,17 @@ In production, this chain is orchestrated via a Fabric Data Pipeline with activi
 
 ## Data Quality Findings
 
-Nine checks were implemented across three tables. Results are persisted in `gold_dq_issues` for governance and BI consumption.
+Ten checks were implemented across three tables. Results are persisted in `gold_dq_issues` for governance and BI consumption.
 
-**Critical findings:**
+**Critical severity — source data corrections applied:**
 
-- `TotalOrder = $0` for all 6,571 orders in the source — recomputed from Order_Details
-- `ShipmentDate` ranges 2007–2012 while `OrderDate` ranges 2016–2021 — temporally impossible, data from a legacy migration. Delivery SLA cannot be calculated.
-- `ShipperIDs 4 and 5` referenced in 20% of orders with no record in Shippers master data
-- `DivisionID = 2` duplicated for both North America and Central America — primary key violation
+- `TotalOrder = $0` for all 6,571 orders in the source — recomputed from Order_Details (Critical)
+- `DivisionID = 2` duplicated for both North America and Central America — primary key violation (Critical)
+
+**High severity — unfixable at pipeline level:**
+
+- `ShipmentDate` ranges 2007–2012 while `OrderDate` ranges 2016–2021 — temporally impossible, legacy migration artifact. Delivery SLA cannot be calculated. Tagged `High` in `gold_dq_issues`.
+- `ShipperIDs 4 and 5` referenced in 20% of orders with no record in Shippers master data — Unknown Members injected. Tagged `High`.
 
 **Notable behavioral patterns (not errors):**
 
