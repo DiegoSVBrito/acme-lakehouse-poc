@@ -2,8 +2,8 @@
 
 **Data Engineering | Microsoft Fabric Lakehouse | Medallion Architecture**
 
-Author: Diego Santiago Vieira de Brito
-Reference Date: April 1, 2021
+Author: Diego Brito · Pomerol
+Reference Date: April 1, 2021 (data cutoff)  |  Document: June 2026
 
 ---
 
@@ -62,9 +62,10 @@ acme-lakehouse-poc/
 │   ├── NB_02_Silver_Transformation_v2.ipynb Cleansing and enrichment pipeline
 │   ├── NB_03_Gold_StarSchema_v2.ipynb      Star schema build
 │   ├── NB_04_Data_Quality_v2.ipynb         Data quality checks
-│   └── NB_05_Insights_SQL_v2.ipynb         SQL-driven business insights
+│   ├── NB_05_Insights_SQL_v2.ipynb         SQL-driven business insights
+│   └── NB_06_Orchestration_v2.ipynb        Fabric Data Pipeline orchestration
 └── docs/
-    ├── ACME_Architecture_OnePager.docx     One-page architecture reference
+    ├── ACME_Architecture_OnePager.pdf      One-page architecture reference
     ├── ACME_DE_POC_Presentation.pptx       Full project presentation
     └── images/
         ├── medallion-architecture.png      Architecture diagram
@@ -195,4 +196,4 @@ Nine checks were implemented across three tables. Results are persisted in `gold
 
 ---
 
-Diego Santiago Vieira de Brito
+Diego Brito · Pomerol · June 2026
