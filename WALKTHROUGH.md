@@ -1,8 +1,8 @@
 # Technical Walkthrough
 ## ACME Inc. — Data Engineering Platform on Microsoft Fabric
 
-Author: Diego Santiago Vieira de Brito
-Last updated: April 1, 2021 (reference date)
+Author: Diego Brito · Pomerol
+Last updated: June 2026  |  Data reference: April 1, 2021
 
 ---
 
@@ -350,4 +350,4 @@ Each notebook is idempotent. Re-running any notebook overwrites its target table
 
 ---
 
-Diego Santiago Vieira de Brito
+Diego Brito · Pomerol · June 2026
